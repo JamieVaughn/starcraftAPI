@@ -1,6 +1,6 @@
-import { Structures } from './data/structures.js'
-import { Units } from './data/units.js'
-import { Upgrades } from './data/upgrades.js'
+import { Structures } from '../../data/protoss/structures.js'
+import { Units } from '../../data/protoss/units.js'
+import { Upgrades } from '../../data/protoss/upgrades.js'
 
 export default (req, res) => {
     res.statusCode = 200

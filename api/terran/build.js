@@ -1,6 +1,6 @@
-import { Structures } from './data/structures.js'
-import { Units } from './data/units.js'
-import { Upgrades } from './data/upgrades.js'
+import { Structures } from '../../data/terran/structures.js'
+import { Units } from '../../data/terran/units.js'
+import { Upgrades } from '../../data/terran/upgrades.js'
 
 export default (req, res) => {
     res.statusCode = 200
