@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="supports csstransforms3d generatedcontent">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	<title>Starcraft II API</title>
+
+	<!-- META -->
+	<meta name="description" content="Starcraft II API Landing Page">
+	<meta name="keywords" content="starcraft starcraft2 build order buildorder optimizer calculator game">
+	
+	<!-- CSS -->
+	<link href="./assets/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+		
+	<!-- JS -->
+	<script type="text/javascript" src="./assets/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/script.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="chrome-extension://abkfbakhjpmblaafnpgjppbmioombali/content_script.css">
+</head>
+<body class="vsc-initialized" cz-shortcut-listen="true">
+
+	
+	<!-- ARTWORK / TITLE -->
+	<div id="artwork" class="parallax_enabled">
+		<div class="parallax" id="background" data-scale="4" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+		<div class="parallax" id="layer01" data-scale="10" style="transform: translate3d(0px, 0px, 0px); display: block;">
+			<div class="clouds"></div>
+			<div class="balloon"></div>
+		</div>
+		<div class="parallax" id="layer02" data-scale="15" style="transform: translate3d(0px, 0px, 0px); display: block;">
+			<div class="balloon"></div>
+			<canvas id="flag3" width="70" height="55" data-r="97" data-g="70" data-b="120">
+				<div class="fallback"></div>
+			</canvas>
+		</div>
+		<div class="parallax" id="layer03" data-scale="20" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+		<div class="parallax" id="layer04" data-scale="30" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+		<div class="parallax" id="title" data-scale="30" style="transform: translate3d(0px, 0px, 0px);">
+			<h1 class="">Starcraft II API<div class="dark_overlay" style="opacity: -0.0333333;"></div></h1>
+			<h2 class="parallax" data-scale="-3" style="transform: translate3d(0px, 0px, 0px); opacity: 2;">Build Order Calculator</h2>
+		</div>
+		<div class="parallax" id="layer05" data-scale="40" style="transform: translate3d(0px, 0px, 0px); display: block;">
+			<canvas id="flag1" width="90" height="66" data-r="164" data-g="77" data-b="114">
+				<div class="fallback"><div class="dark_overlay" style="opacity: -0.333333;"></div></div>
+			</canvas>
+			<canvas id="flag2" width="90" height="66" data-r="124" data-g="66" data-b="109">
+				<div class="fallback"><div class="dark_overlay" style="opacity: -0.333333;"></div></div>
+			</canvas>
+		<div class="dark_overlay" style="opacity: -0.333333;"></div></div>
+		<div class="parallax" id="layer06" data-scale="50" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+		<div class="parallax" id="layer07" data-scale="45" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+		<div class="parallax" id="layer08" data-scale="80" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+		<div class="parallax" id="layer09" data-scale="100" style="transform: translate3d(0px, 0px, 0px); display: block;"></div>
+	</div>
+	
+	<!-- CONTENT -->
+	<div id="content">
+
+		<div id="inner">		
+
+			<!-- VIDEO -->
+			<a id="video_thumb" href="https://www.youtube.com/watch?v=8UyMAPr-G44">
+				<span class="text">Watch the Starcraft Story</span>
+				<span class="button"></span>
+			</a>
+
+            <ul id="awards">
+                <li><a target="_blank" href="""><p>Caculate Build Orders for any of 3 Races</p></a></li>
+                <li class="screenshot-titles">
+                    <h3>Protoss</h3>
+                    <h3>Terran</h3>
+                    <h3>Zerg</h3>
+                </li>
+			</ul>
+			<!-- SCREENSHOTS -->
+			<ul id="screenshots">
+				<li>
+					<a id="screenshot-1" data-lightbox="screenshots" href=""><img src="./assets/01_protoss_forces.png" alt=""></a></li><li>
+					<a id="screenshot-2" data-lightbox="screenshots" href=""><img src="./assets/02_terran_forces.jpg" alt=""></a></li><li>
+					<a id="screenshot-3" data-lightbox="screenshots" href=""><img src="./assets/03_zerg_forces.jpg" alt=""></a></li><li>
+					<a id="screenshot-6" data-lightbox="screenshots" href=""><img src="./assets/04_protoss_splash.jpg" alt=""></a></li><li>
+					<a id="screenshot-4" data-lightbox="screenshots" href=""><img src="./assets/05_terran_splash.jpg" alt=""></a></li><li>
+					<a id="screenshot-5" data-lightbox="screenshots" href=""><img src="./assets/06_zerg_splash.jpg" alt=""></a>
+				</li>
+			</ul>
+			
+			<!-- SIGNUP -->
+			<form id="subscribe" action="https://getsimpleform.com/messages?form_api_token=8d73f78e270ace7eeda7529329d6a348" method="post" name="mc-embedded-subscribe-form" target="_blank">
+				<h3>Sign up if you're interested in using the tool.</h3>
+				<input class="text" id="mce-EMAIL" name="EMAIL" type="email" placeholder="Enter your email">
+				<input class="submit" name="subscribe" type="submit" id="mc-embedded-subscribe" value="Submit">
+				<input class="optin" name="OPTIN" type="checkbox" ><span>Please contact me when the tool is available</span>
+			</form>	
+	
+		
+
+			<!-- Links -->
+			<ul id="links">
+				<li><a href="http://altosodyssey.com/presskit" target="_blank">View the tool</a></li>
+				<li><a href="http://www.linkedin.com/in/jamievaughn">Get in touch</a></li>
+				<li><a href="http://www.github.com/JamieVaughn">Support</a></li>
+				<br>
+				<br>
+				<li><i><a href="http://www.altosadventure.com/" target="_blank">BuildCraft: Discover Your Perfect Build Order</a></i></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>
