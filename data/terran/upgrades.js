@@ -1,9 +1,9 @@
 export const Upgrades = {
-    'Adaptive Talons': {
+    'Advanced Ballistics': {
       minerals: 150,
       vespene: 150,
       duration: 57,
-      text: 'Reduces the time Lurkers take to burrow from 2s to 0.7s and increases movement speed.'
+      text: 'Increases the range of Liberators in Defender mode by 3.'
     },
     'Seismic Spines': {
       minerals: 150,

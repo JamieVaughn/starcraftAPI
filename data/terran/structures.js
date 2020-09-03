@@ -1,152 +1,131 @@
 export const Structures = {
-    Hatchery: {
-      minerals: 300,
+    'Command Center': {
+      minerals: 400,
       vespene: 0,
       duration: 71,
       supply: 6,
-      text: 'Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into Lair.'
+      text: 'Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into Orbital Command or a Planetary Fortress.',
+      enables: ['SCV']
     },
-    Lair: {
+    'Orbital Command': {
+      minerals: 0,
+      vespene: 0,
+      duration: ,
+      supply: 6,
+      text: ''
+    },
+    'Planetary Fortress': {
       minerals: 150,
-      vespene: 100,
-      duration: 57,
-      supply: 6,
-      text: 'Evolved version of the Htchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.'
-    },
-    Hive: {
-      minerals: 200,
       vespene: 150,
-      duration: 71,
-      supply: 6,
-      text: 'Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.'
-    },
-    Extractor: {
-      minerals: 25,
-      vespene: 0,
-      duration: 21,
-      text: 'Mutated over Vespene Geyser to allow harvesting of vespene gas.'
-    },
-    'Spawning Pool': {
-      minerals: 200,
-      vespene: 0,
-      duration: 46,
-      text: 'Contains upgrades for Zerglings',
-      enables: [
-        'Queens at Hatchery, Lair, or Hive',
-        'Zerglings from Larvae',
-        'Spine Crawlers from Drones',
-        'Spore Crawlers from Drones'
-      ]
-    },
-    'Spine Crawler': {
-      minerals: 100,
-      vespene: 0,
       duration: 36,
-      text: 'Anti-ground defense structure.'
+      text: 'Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with powerful defensive turret. Cannot lift off.',
+      attack: ['ground']
     },
-    'Spore Crawler': {
+    Refinery: {
       minerals: 75,
       vespene: 0,
       duration: 21,
+      text: 'Built over Vespene Geyser to allow harvesting of vespene gas.'
+    },
+    'Supply Depot': {
+      minerals: 100,
+      vespene: 0,
+      duration: 21,
+      supply: 8,
+      text: 'Provides supply. Supply allows you to create more units. Supply Depots can be lowered to allow units to walk over.',
+    },
+    Barracks: {
+      minerals: 150,
+      vespene: 0,
+      duration: 46,
+      text: 'Infantry production facility.',
+      enables: [
+        'Marines', 'Marauders with Tech Lab', 'Reapers', 'Orbital Commands'
+      ]
+    },
+    Reactor: {
+      minerals: 50,
+      vespene: 50,
+      duration: 36,
+      text: 'Allows 2 units to be created simultaneously.'
+    },
+    'Tech Lab': {
+      minerals: 50,
+      vespene: 25,
+      duration: 18,
+      text: 'Infantry research structure. A Tech Lab can fit onto any production structure.',
+      enables: ['Marauders', 'Ghosts with Ghost Academy']
+    },
+    Bunker: {
+      minerals: 100,
+      vespene: 0,
+      duration: 29,
+      text: 'Static defense structure.'
+    },
+    'Engineering Bay': {
+      minerals: 125,
+      vespene: 0,
+      duration: 25,
+      text: 'Contains upgrades for Terran infantry and structures.',
+      enables: [
+        'Missile Turrets',
+        'Sensor Towers',
+        'Planetary Fortress'
+      ]
+    },
+    'Missile Turret': {
+      minerals: 100,
+      vespene: 0,
+      duration: 18,
       text: 'Anti-air defense structure.',
+      attacks: ['air'],
       special: [
         'Detector'
       ]
     },
-    'Evolution Chamber': {
-      minerals: 75,
-      vespene: 0,
-      duration: 25,
-      text: 'Contains upgrades for Zerg ground units.'
+    'Sensor Tower': {
+      minerals: 125,
+      vespene: 100,
+      duration: 18,
+      text: 'Reveals the locations of enemy units at long range. The Sensor Tower\'s detection area is visible to the enemy.'
     },
-    'Roach Warren': {
+    Factory: {
       minerals: 150,
-      vespene: 0,
-      duration: 39,
-      text: 'Contains upgrades for Roaches.',
-      enables: [
-        'Roaches from Larvae',
-        'Ravagers from Roaches'
-      ]
-    },
-    'Baneling Nest': {
-      minerals: 100,
-      vespene: 50,
+      vespene: 100,
       duration: 43,
-      text: 'Contains an upgrade for Banelings.',
+      text: 'Vehicle production facility.',
       enables: [
-        'Banelings from Zerglings'
+        'Hellions',
+        'Widow Mines',
+        'Cyclones'
       ]
     },
-    'Hydralisk Den': {
-      minerals: 100,
-      vespene: 100,
-      duration: 29,
-      text: 'Contains upgrades for Hydralisks.',
-      enables: [
-        'Hydralisks from Larvae'
-      ]
-    },
-    'Infestation Pit': {
-      minerals: 100,
+    Starport: {
+      minerals: 150,
       vespene: 100,
       duration: 36,
-      text: 'Contains upgrades for Infestors.',
+      text: 'Air-unit production facility.',
       enables: [
-        'Infestors from Larvae',
-        'Swarm Hosts from Larvae'
+        'Vikings',
+        'Medivacs',
+        'Liberators'
       ]
     },
-    'Nydus Network': {
+    'Fusion Core': {
       minerals: 150,
       vespene: 150,
-      duration: 36,
-      text: 'Friendly ground units can use the Nydus Worm to instantly travel to any other Nydus Network of Nydus Worm ownded by the player.',
-      enables: [
-        'Nydus Worm'
-      ]
-    },
-    'Nydus Worm': {
-      minerals: 75,
-      vespene: 75,
-      duration: 14,
-      text: 'Cooldown 14s. Summons a Nydus Worm at the target location. Friendly ground units can use the Nydus Worm to instantly travel to any other Nydus Network of Nydus Worm ownded by the player. Grows creep used to feed nearby Zerg structures.'
-    },
-    Spire: {
-      minerals: 200,
-      vespene: 200,
-      duration: 71,
-      text: 'Contains upgrades for Zerg air units. Can mutate into a Greater Spire.',
-      enables: [
-        'Mutalisks from Larvae',
-        'Corruptors from Larvae'
-      ]
-    },
-    'Greater Spire': {
-      minerals: 100,
-      vespene: 150,
-      duration: 71,
-      text: 'Contains upgrades for Zerg air units.',
-      enables: [
-        'Brood Lords from Corruptors'
-      ]
-    },
-    'Lurker Den': {
-      minerals: 100,
-      vespene: 150,
-      duration: 57,
-      text: 'Contains upgrades for Lurkers.',
-      enables: [
-        'Lurkers from Hydralisks'
-      ]
-    },
-    'Ultralisk Cavern': {
-      minerals: 150,
-      vespene: 200,
       duration: 46,
-      text: 'Contains upgrades for Ultralisks.',
+      text: 'Contains MEdivac, Liberator, and Battlecruiser upgrades.',
+      enables: ['Battlecruisers']
+    },
+    Armory: {
+      minerals: 150,
+      vespene: 100,
+      duration: 46,
+      text: 'Contains weapons and armor upgrades for Factory and Starport units.',
       enables: [
-        'Ultralisks from Larvae'
+        'Hellbat',
+        'Thor'
       ]
     }
   }
