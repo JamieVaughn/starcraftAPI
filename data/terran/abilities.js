@@ -76,7 +76,7 @@ export const Spells = {
     'Neural Parasite': {}
   }
 
-  export const Passives ={
+  export const Passives = { 
     'Reaper Combat Drugs': {
       text: 'Regenerates life quickly while out of combat.'
     },

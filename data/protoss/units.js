@@ -1,22 +1,5 @@
 export const Units = {
-    Larvae: {
-      minerals: 0,
-      vespene: 0,
-      duration: 10.6,
-      supply: 0,
-      text: 'Spawns from Hatchery',
-      attacks: [],
-      special: 'Limit 3'
-    },
-    Egg: {
-      minerals: 0,
-      vespene: 0,
-      duration: null,
-      supply: 0,
-      text: 'Spawns from Larvae',
-      attacks: []
-    },
-    Drone: {
+    Probe: {
       minerals: 50,
       vespene: 0,
       duration: 12,
@@ -24,50 +7,99 @@ export const Units = {
       text: 'Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.',
       attacks: []
     },
-    Overlord: {
+    Zealot: {
       minerals: 100,
       vespene: 0,
       duration: 18,
-      supply: -8,
+      supply: 1,
       text: 'Provides Supply. Supply allows you to create more units.',
       attacks: []
     },
-    Overseer: {
+    Adept: {
       minerals: 50,
       vespene: 50,
       duration: 12,
-      supply: -8,
+      supply: 1,
       text: 'Advanced aerial observer. Provides the same supply as an Overlord. Can use Spawn Changeling and Contaminate abilities.',
       attacks: [],
       special: [
-        'Detector'
+        'Astral Projection'
       ]
     },
-    'Ventral Sacs': {
+    Stalker: {
       minerals: 25,
       vespene: 25,
       duration: 12,
-      supply: -8,
+      supply: 2,
       text: 'Spawns from HAtchery',
-      attacks: []
+      attacks: [
+        'ground',
+        'air'
+      ],
+      special: [
+        'Blink'
+      ]
     },
-    Queen: {
+    Sentry: {
+      minerals: 125,
+      vespene: 125,
+      duration: 12,
+      supply: 2,
+      text: 'Spawns from HAtchery',
+      attacks: [
+        'ground',
+        'air'
+      ],
+      special: [
+        'Hallucination',
+        'Shield Battery',
+        'Forcefield',
+        'Dome Shield'
+      ]
+    },
+    'High Templar': {
       minerals: 150,
       vespene: 0,
       duration: 36,
       supply: 2,
       text: 'Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves faster on creep.',
       attacks: [
-        'ground',
-        'air'
+        'ground'
       ],
       special: [
-        'Spawn Larvae',
-        'Spawn Creep Tumor',
-        'Transfusion'
+        'Pyschic Storm',
+        'Morph Archon'
       ]
     },
-    Zergling: {
+    'Dark Templar': {
+      minerals: 150,
+      vespene: 0,
+      duration: 36,
+      supply: 2,
+      text: 'Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves faster on creep.',
+      attacks: [
+        'ground'
+      ],
+      special: [
+        'Invisible',
+        'Blink',
+        'Morph Archon'
+      ]
+    },
+    Archon: {
+      'Dark Templar': {
+        minerals: 150,
+        vespene: 0,
+        duration: 36,
+        supply: 2,
+        text: 'Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves faster on creep.',
+        attacks: [
+          'ground',
+          'air'
+        ]
+      },
+    },
+    Immortal: {
       minerals: 50,
       vespene: 0,
       duration: 17,
@@ -80,7 +112,7 @@ export const Units = {
         'Twins'
       ]
     },
-    Baneling: {
+    Observer: {
       minerals: 25,
       vespene: 25,
       duration: 14,
@@ -88,9 +120,12 @@ export const Units = {
       text: 'Suicide Unit. Does damage over a small area on death.',
       attacks: [
         'ground'
+      ],
+      special: [
+        'Detector'
       ]
     },
-    Roach: {
+    Colossus: {
       minerals: 75,
       vespene: 25,
       duration: 19,
@@ -100,20 +135,31 @@ export const Units = {
         'ground'
       ]
     },
-    Ravager: {
+    Disruptor: {
       minerals: 25,
       vespene: 75,
       duration: 9,
       supply: 3,
-      text: 'Ranged artillery. Can use Corrosive Bile.',
+      text: 'Ranged artillery. Can use Purification Nova.',
       attacks: [
         'ground'
       ],
       special: [
-        'Corrosive Bile'
+        'Purification Nova'
       ]
     },
-    Hydralisk: {
+    'Warp Prism': {
+      minerals: 50,
+      vespene: 100,
+      duration: 18,
+      supply: 3,
+      text: 'Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.',
+      attacks: [],
+      special: [
+        'Transport'
+      ]
+    },
+    Oracle: {
       minerals: 100,
       vespene: 50,
       duration: 24,
@@ -121,23 +167,39 @@ export const Units = {
       text: 'Ranged Attacker. Can morph into Lurker.',
       attacks: [
         'ground',
-        'air'
       ],
       special: [
-        'Corrosive Bile'
+        'Beam'
       ]
     },
-    Lurker: {
+    Pheonix: {
       minerals: 50,
       vespene: 100,
       duration: 18,
       supply: 3,
       text: 'Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.',
       attacks: [
-        'ground'
+        'air'
+      ],
+      special: [
+        'Lift Ray'
       ]
     },
-    Mutalisk: {
+    'Void Ray': {
+      minerals: 50,
+      vespene: 100,
+      duration: 18,
+      supply: 3,
+      text: 'Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.',
+      attacks: [
+        'ground',
+        'air'
+      ],
+      special: [
+        'Prismatic Alignment'
+      ]
+    },
+    Carrier: {
       minerals: 100,
       vespene: 100,
       duration: 24,
@@ -146,77 +208,47 @@ export const Units = {
       attacks: [
         'ground',
         'air'
-      ]
-    },
-    Corruptor: {
-      minerals: 150,
-      vespene: 100,
-      duration: 29,
-      supply: 2,
-      text: 'Anti-air flyer. Can use Caustic Spray. Can morph into Brood Lord.',
-      attacks: [
-        'air'
       ],
       special: [
-        'Caustic Spray'
+        'Make interceptor'
       ]
     },
-    'Brood Lord': {
+    Interceptor: {
+      minerals: 15,
+      vespene: 0,
+      duration: 9,
+      supply: 0,
+      text: 'Anti-air flyer. Can use Caustic Spray. Can morph into Brood Lord.',
+      attacks: [
+        'ground',
+        'air'
+      ]
+    },
+    Tempest: {
       minerals: 150,
       vespene: 150,
       duration: 24,
       supply: 4,
       text: 'Flying heavy-assault unit. Shoots Broodlings at its target. A Broodling is a small creature that can attack ground units.',
       attacks: [
-        'ground'
+        'ground',
+        'air'
       ]
     },
-    Infestor: {
+    Mothership: {
       minerals: 100,
       vespene: 150,
       duration: 36,
       supply: 2,
       text: 'Infestation specialist. Can use the Fungal Growth, Microbial Shroud, and Neural Parasite abilities.',
-      attacks: [],
-      special: [
-        'Fungal Growth',
-        'Microbial Shroud',
-        'Neural Parasite'
-      ]
-    },
-    'Swarm Host': {
-      minerals: 100,
-      vespene: 75,
-      duration: 29,
-      supply: 3,
-      text: 'Siege unit that attacks by spawning Locust minions. Locusts can attack ground units.',
-      attacks: [],
-      special: [
-        'Spawn Locusts'
-      ]
-    },
-    Viper: {
-      minerals: 100,
-      vespene: 200,
-      duration: 29,
-      supply: 3,
-      text: 'Flying caster. Able to manipulate battlefield conditions. Can use Parasitic Bomb, Consume, Blinding Cloud, and Abduct abilities.',
-      attacks: [],
-      special: [
-        'Parasitic Bomb',
-        'Consume',
-        'Blinding Cloud',
-        'Abduct'
-      ]
-    },
-    Ultralisk: {
-      minerals: 300,
-      vespene: 200,
-      duration: 39,
-      supply: 6,
-      text: 'Heavy assault beast. Has an area-damage attack',
       attacks: [
-        'ground'
+        'ground',
+        'air'
+      ],
+      special: [
+        'Time Warp',
+        'Invisibility Field',
+        'Neural Parasite'
       ]
     }
   }

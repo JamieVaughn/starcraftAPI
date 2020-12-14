@@ -10,9 +10,14 @@ export const Structures = {
     'Orbital Command': {
       minerals: 0,
       vespene: 0,
-      duration: ,
+      duration: 25,
       supply: 6,
-      text: ''
+      text: 'Upgrades Command Center to an Orbital Command.',
+      abilities: [
+        'Scanner Sweep',
+        'Calldown: Extra Supplies',
+        'Calldown: MULE'
+      ]
     },
     'Planetary Fortress': {
       minerals: 150,
@@ -88,6 +93,15 @@ export const Structures = {
       vespene: 100,
       duration: 18,
       text: 'Reveals the locations of enemy units at long range. The Sensor Tower\'s detection area is visible to the enemy.'
+    },
+    'Ghost Academy': {
+      minerals: 150,
+      vespene: 50,
+      duration: 29,
+      text: 'Contains upgrades for Ghosts. Can build Nukes for Ghosts.',
+      enables: [
+        'Ghosts'
+      ]
     },
     Factory: {
       minerals: 150,
