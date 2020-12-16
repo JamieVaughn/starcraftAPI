@@ -1,32 +1,39 @@
 export const Structures = {
-    Hatchery: {
+    Nexus: {
       minerals: 300,
       vespene: 0,
       duration: 71,
       supply: 6,
       text: 'Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into Lair.'
     },
-    Lair: {
+    Assimilator: {
+      minerals: 75,
+      vespene: 0,
+      duration: 57,
+      supply: 6,
+      text: 'Extracts vespene gas'
+    },
+    Pylon: {
       minerals: 150,
       vespene: 100,
       duration: 57,
       supply: 6,
       text: 'Evolved version of the Htchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.'
     },
-    Hive: {
+    Forge: {
       minerals: 200,
       vespene: 150,
       duration: 71,
       supply: 6,
       text: 'Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.'
     },
-    Extractor: {
+    'Photon Cannon': {
       minerals: 25,
       vespene: 0,
       duration: 21,
       text: 'Mutated over Vespene Geyser to allow harvesting of vespene gas.'
     },
-    'Spawning Pool': {
+    Gateway: {
       minerals: 200,
       vespene: 0,
       duration: 46,
@@ -38,13 +45,13 @@ export const Structures = {
         'Spore Crawlers from Drones'
       ]
     },
-    'Spine Crawler': {
+    'Cybernetics Core': {
       minerals: 100,
       vespene: 0,
       duration: 36,
       text: 'Anti-ground defense structure.'
     },
-    'Spore Crawler': {
+    Stargate: {
       minerals: 75,
       vespene: 0,
       duration: 21,
@@ -53,13 +60,13 @@ export const Structures = {
         'Detector'
       ]
     },
-    'Evolution Chamber': {
+    'Robotics Facility': {
       minerals: 75,
       vespene: 0,
       duration: 25,
       text: 'Contains upgrades for Zerg ground units.'
     },
-    'Roach Warren': {
+    'Robotics Bay': {
       minerals: 150,
       vespene: 0,
       duration: 39,
@@ -69,7 +76,7 @@ export const Structures = {
         'Ravagers from Roaches'
       ]
     },
-    'Baneling Nest': {
+    'Templar Archives': {
       minerals: 100,
       vespene: 50,
       duration: 43,
@@ -78,7 +85,7 @@ export const Structures = {
         'Banelings from Zerglings'
       ]
     },
-    'Hydralisk Den': {
+    'Fleet Beacon': {
       minerals: 100,
       vespene: 100,
       duration: 29,
@@ -87,7 +94,7 @@ export const Structures = {
         'Hydralisks from Larvae'
       ]
     },
-    'Infestation Pit': {
+    'Dark Shrine': {
       minerals: 100,
       vespene: 100,
       duration: 36,
@@ -97,7 +104,7 @@ export const Structures = {
         'Swarm Hosts from Larvae'
       ]
     },
-    'Nydus Network': {
+    'Twilight Council': {
       minerals: 150,
       vespene: 150,
       duration: 36,
@@ -106,47 +113,10 @@ export const Structures = {
         'Nydus Worm'
       ]
     },
-    'Nydus Worm': {
+    'Shield Battery': {
       minerals: 75,
       vespene: 75,
       duration: 14,
       text: 'Cooldown 14s. Summons a Nydus Worm at the target location. Friendly ground units can use the Nydus Worm to instantly travel to any other Nydus Network of Nydus Worm ownded by the player. Grows creep used to feed nearby Zerg structures.'
-    },
-    Spire: {
-      minerals: 200,
-      vespene: 200,
-      duration: 71,
-      text: 'Contains upgrades for Zerg air units. Can mutate into a Greater Spire.',
-      enables: [
-        'Mutalisks from Larvae',
-        'Corruptors from Larvae'
-      ]
-    },
-    'Greater Spire': {
-      minerals: 100,
-      vespene: 150,
-      duration: 71,
-      text: 'Contains upgrades for Zerg air units.',
-      enables: [
-        'Brood Lords from Corruptors'
-      ]
-    },
-    'Lurker Den': {
-      minerals: 100,
-      vespene: 150,
-      duration: 57,
-      text: 'Contains upgrades for Lurkers.',
-      enables: [
-        'Lurkers from Hydralisks'
-      ]
-    },
-    'Ultralisk Cavern': {
-      minerals: 150,
-      vespene: 200,
-      duration: 46,
-      text: 'Contains upgrades for Ultralisks.',
-      enables: [
-        'Ultralisks from Larvae'
-      ]
     }
   }
